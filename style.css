@@ -1,17 +1,12 @@
 /* Vidéo d'arrière-plan */
-.video-background {
+#background-video {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Derrière le contenu */
-}
-
-#background-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Couvre l'écran entier */
+    object-fit: cover;
+    z-index: -1; /* Place la vidéo derrière le contenu */
 }
 
 /* Style de base */
@@ -30,7 +25,7 @@ body {
 
 .loading-container {
     text-align: center;
-    z-index: 1; /* Devant la vidéo */
+    z-index: 1; /* Place le contenu devant la vidéo */
 }
 
 h1 {
