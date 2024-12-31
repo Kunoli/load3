@@ -1,15 +1,42 @@
-// Ajout d'astuces dynamiques
-const tips = [
-    "Astuce : Utilisez !help pour obtenir des informations sur les commandes.",
-    "Astuce : Respectez les règles pour une meilleure expérience.",
-    "Astuce : Contactez un administrateur si vous avez un problème."
-];
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e2f;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
 
-const tipsElement = document.getElementById("tips");
+/* Loading screen container */
+#loading-screen {
+    text-align: center;
+}
 
-// Change l'astuce toutes les 5 secondes
-let index = 0;
-setInterval(() => {
-    index = (index + 1) % tips.length;
-    tipsElement.textContent = tips[index];
-}, 5000);
+/* Loading image */
+#loading-screen img {
+    max-width: 200px;
+    height: auto;
+    animation: spin 2s linear infinite;
+}
+
+/* Loading text */
+#loading-screen p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #a9a9ff;
+}
+
+/* Spinning animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
