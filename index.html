@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garry's Mod Loading Screen</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Loading Screen</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+    </style>
 </head>
 <body>
-    <div id="loading-screen">
-        <img src="13254.gif" alt="Loading GIF">
-        <p>Loading... Please wait</p>
-    </div>
-    <script src="script.js"></script>
+    <img src="13254.gif" alt="Loading">
+    <p>Chargement en cours...</p>
 </body>
 </html>
